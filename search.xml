@@ -283,9 +283,9 @@
     
     
     <entry>
-      <title>gallery</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
+      <title>友情链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -294,9 +294,9 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>gallery</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -320,7 +320,7 @@
       <link href="/music/index.html"/>
       <url>/music/index.html</url>
       
-        <content type="html"><![CDATA[    <div id="aplayer-xuxnLaUL" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7610399911" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="400px" data-preload="none" data-theme="#ad7a86"    ></div><!-- <script>console.error("SyntaxError: Unexpected token / in JSON at position 48");</script> -->]]></content>
+        <content type="html"><![CDATA[    <div id="aplayer-wqQwMrRN" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7610399911" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="400px" data-preload="none" data-theme="#ad7a86"    ></div><!-- <script>console.error("SyntaxError: Unexpected token / in JSON at position 48");</script> -->]]></content>
       
     </entry>
     
