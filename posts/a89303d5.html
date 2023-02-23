@@ -1,0 +1,693 @@
+<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;en&quot;,&quot;default&quot;]" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>移动端 | StudyBlog</title><meta name="keywords" content="小涛,博客,blog,xiaotao.cloud,blog.xiaotao.cloud,xiaotao,cloud"><meta name="author" content="Xiao Tao,2177393158@qq.com"><meta name="copyright" content="Xiao Tao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="移动端国内的UC和QQ，百度等手机浏览器都是根据 Webkit 修改过来的内核 兼容移动端主流浏览器 处理 webkit 内核浏览器即可 常见移动端屏幕尺寸 调式 Chrome DevTools（谷歌浏览器）的模拟手机调试 搭建本地 web 服务器， 手机和服务器一个局域网内 通过手机访问服务器 使用外网服务器 直接 IP 或域名访问   视口视口（viewport） 就是浏览器显示页面内容的屏幕">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动端">
+<meta property="og:url" content="http://example.com/posts/a89303d5.html">
+<meta property="og:site_name" content="StudyBlog">
+<meta property="og:description" content="移动端国内的UC和QQ，百度等手机浏览器都是根据 Webkit 修改过来的内核 兼容移动端主流浏览器 处理 webkit 内核浏览器即可 常见移动端屏幕尺寸 调式 Chrome DevTools（谷歌浏览器）的模拟手机调试 搭建本地 web 服务器， 手机和服务器一个局域网内 通过手机访问服务器 使用外网服务器 直接 IP 或域名访问   视口视口（viewport） 就是浏览器显示页面内容的屏幕">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://api.maho.cc/random-img/pc.php?4">
+<meta property="article:published_time" content="2023-02-23T03:24:55.619Z">
+<meta property="article:modified_time" content="2022-08-29T07:22:40.000Z">
+<meta property="article:author" content="Xiao Tao">
+<meta property="article:tag" content="小涛,博客,blog,xiaotao.cloud,blog.xiaotao.cloud,xiaotao,cloud">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://api.maho.cc/random-img/pc.php?4"><link rel="shortcut icon" href="/img/xiaotao.png"><link rel="canonical" href="http://example.com/posts/a89303d5"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="/pluginsSrc/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/pluginsSrc/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Xiao Tao","link":"链接: ","source":"来源: StudyBlog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: '/pluginsSrc/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: '/pluginsSrc/flickr-justified-gallery/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '移动端',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-08-29 15:22:40'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.5/lib/clock.min.css" /><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="StudyBlog" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cravatar.cn/avatar/e2e440da3c8f5379912c8a9c4df4e420?s=96&amp;d=https%3A%2F%2Fcn.gravatar.com%2Favatar%2Fb745710ae6b0ce9dfb13f5b7c0956be1&amp;r=g" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-tags"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-tags"></i><span> 说说</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://api.maho.cc/random-img/pc.php?4')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">StudyBlog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-tags"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-tags"></i><span> 说说</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">移动端</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-02-23T03:24:55.619Z" title="发表于 2023-02-23 11:24:55">2023-02-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-29T07:22:40.000Z" title="更新于 2022-08-29 15:22:40">2022-08-29</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="移动端"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h1><p>国内的UC和QQ，百度等手机浏览器都是根据 Webkit 修改过来的内核</p>
+<p><code>兼容移动端主流浏览器 处理 webkit 内核浏览器即可</code></p>
+<h3 id="常见移动端屏幕尺寸"><a href="#常见移动端屏幕尺寸" class="headerlink" title="常见移动端屏幕尺寸"></a>常见移动端屏幕尺寸</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220524180313350.png" alt="image-20220524180313350"></p>
+<h3 id="调式"><a href="#调式" class="headerlink" title="调式"></a>调式</h3><ul>
+<li>Chrome DevTools（谷歌浏览器）的模拟手机调试</li>
+<li>搭建本地 web 服务器， 手机和服务器一个局域网内 通过手机访问服务器</li>
+<li>使用外网服务器 直接 IP 或域名访问 </li>
+</ul>
+<h2 id="视口"><a href="#视口" class="headerlink" title="视口"></a>视口</h2><p>视口（viewport） 就是浏览器显示页面内容的屏幕区域 视口可以分为布局视口 视觉视口 和 理想视口</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220524182333476.png" alt="image-20220524182333476"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220524182352139.png" alt="image-20220524182352139"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220524182431493.png" alt="image-20220524182431493"></p>
+<h3 id="meta-视口标签"><a href="#meta-视口标签" class="headerlink" title="meta 视口标签"></a>meta 视口标签</h3><p><strong>（1）Compatible</strong>：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>解释：设置浏览器的兼容模式版本。表示如果在IE浏览器下则使用最新的标准，渲染当前文档。</p>
+<p><strong>（2）viewport 视口</strong>：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0, user-scalable=no&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>解释：声明当前网页在移动端浏览器中展示的相关设置。我们在做移动 web 开发时，就用上面这行代码设置 viewport。</p>
+<p>视口的作用：在移动浏览器中，当页面宽度超出设备，浏览器内部虚拟的一个页面容器，将页面容器缩放到设备这么大，然后展示。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>width</th>
+<th>正整数或device-width</th>
+<th>定义视口的宽度，单位为像素</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>height</td>
+<td>正整数或device-height</td>
+<td>定义视口的高度，单位为像素，一般不用</td>
+</tr>
+<tr>
+<td>initial-scale</td>
+<td>[0.0-10.0]</td>
+<td>定义初始缩放比率</td>
+</tr>
+<tr>
+<td>minimum-scale</td>
+<td>[0.0-10.0]</td>
+<td>定义最小缩放比例，它必须小于或等于maximum-scale设置</td>
+</tr>
+<tr>
+<td>maximum-scale</td>
+<td>[0.0-10.0]</td>
+<td>定义最大缩放比例，它必须大于或等于minimum-scale设置</td>
+</tr>
+<tr>
+<td>user-scalable</td>
+<td>yes （1）/ no（0）</td>
+<td>定义是否允许用户手动缩放页面，默认值 yes</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>​<br>​<br>​<br>​<br>​                </p>
+<p>需要注意的是：</p>
+<ul>
+<li>目前大多数手机浏览器的视口（承载页面的容器）宽度都是980；</li>
+<li>此属性为移动端页面视口设置，上方代码设置的值，表示在移动端页面的宽度为设备的宽度，并且不缩放（缩放级别为1）。</li>
+</ul>
+<p>属性解释：</p>
+<ul>
+<li>width:设置viewport的宽度。</li>
+<li>initial-scale：初始化缩放比例。</li>
+<li>minimum-scale:最小缩放比例。</li>
+<li>maximum-scale:最大缩放比例。</li>
+<li>user-scalable:是否允许用户手动缩放（值可以写成yes/no，也可以写成1/0）</li>
+</ul>
+<p>PS：如果设置了不允许用户缩放，那么最小缩放和最大缩放就没有意义了。二者是矛盾的。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 当判断条件满足时，就会执行注释中的HTML代码，不满足时会当做注释忽略掉 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!--[if lt IE 9]&gt;</span></span><br><span class="line"><span class="comment">&lt;script src=&quot;https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="comment">&lt;script src=&quot;https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="comment">&lt;![endif]--&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/aFarkas/html5shiv">html5shiv</a>：让浏览器可以识别 HTML5 的新标签。如header、footer、section等。</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/scottjehl/Respond">respond.js</a>：让低版本浏览器可以使用 CSS3 的媒体查询。</li>
+</ul>
+<h2 id="移动端-适配-方案"><a href="#移动端-适配-方案" class="headerlink" title="移动端 适配 方案"></a>移动端 适配 方案</h2><h4 id="rem-适配"><a href="#rem-适配" class="headerlink" title="rem 适配"></a>rem 适配</h4><p>Rem( font size of the root element) 是一个相对单位，<strong>相对于根元素的字号大小进行计算</strong></p>
+<p>大多数浏览器的默认字号是16px，因此默认 <font style="color: red">1rem=16px</font> </p>
+<p>background</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220531103028597.png" alt="image-20220531103028597"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- css 初始化样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/normalize/8.0.0/normalize.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="移动端布局"><a href="#移动端布局" class="headerlink" title="移动端布局"></a>移动端布局</h2><h3 id="单独制作-移动端-页面"><a href="#单独制作-移动端-页面" class="headerlink" title="单独制作 移动端 页面"></a>单独制作 移动端 页面</h3><ul>
+<li>流式布局（百分比布局）</li>
+<li>flex  弹性布局</li>
+<li>less + rem + 媒体查询布局</li>
+<li>混合布局</li>
+</ul>
+<h3 id="响应式页面布局"><a href="#响应式页面布局" class="headerlink" title="响应式页面布局"></a>响应式页面布局</h3><ul>
+<li>媒体查询</li>
+<li>bootstarp</li>
+</ul>
+<h4 id="流式布局"><a href="#流式布局" class="headerlink" title="流式布局"></a>流式布局</h4><p><strong>京东首页</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220531171659969.png" alt="image-20220531171659969"></p>
+<h4 id="flex-弹性布局"><a href="#flex-弹性布局" class="headerlink" title="flex  弹性布局"></a>flex  弹性布局</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220602115032851.png" alt="image-20220602115032851"></p>
+<p>flex 是 flexible Box 的缩写。 意为：弹性布局 。用来为盒状模型提供最大的灵活性 任何一个容器都可以指定为布局</p>
+<ul>
+<li>当我们为父盒子设为flex 布局后 子元素的 float，clear 和 vertical-align 属性将失效。</li>
+<li>伸缩布局 = 弹性布局 = 伸缩盒布局 = 弹性盒布局 = flex 布局</li>
+</ul>
+<p><strong>原理</strong></p>
+<p>采用 Flex 布局都的元素 称为 Flex 容器 （Flex container） 简称 容器  他的所有子元素自动成为容器成员 称为 Flex 项目 （flex item）</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/3791e575c48b3698be6a94ae1dbff79d.png" alt="3791e575c48b3698be6a94ae1dbff79d"></p>
+<p>容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做main start，结束位置叫做main end；交叉轴的开始位置叫做cross start，结束位置叫做cross end。</p>
+<p>项目默认沿主轴排列。单个项目占据的主轴空间叫做main size，占据的交叉轴空间叫做cross size。</p>
+<font style="color: red">通过给父盒子添加 flex 属性值， 来控制子盒子的位置和排列方式</font>
+
+
+
+<h5 id="父盒子"><a href="#父盒子" class="headerlink" title="父盒子"></a>父盒子</h5><p><strong>属性</strong></p>
+<ul>
+<li><strong>flex-direction</strong>  : 设置主轴的方向</li>
+<li><strong>flex-wrap</strong> ： 设置子元素是否换行</li>
+<li><strong>flex-flow</strong> ： 复合属性，相对于同时设置  flex-direction 和  flex-wrap</li>
+<li><strong>justify-content</strong> ： 设置主轴上的子元素排列方式</li>
+<li><strong>align-items</strong> ： 设置侧轴上的子元素的排列方式（单行）</li>
+<li><strong>align-content</strong> ：设置侧轴上的子元素的排列方式（多行）</li>
+</ul>
+<h6 id="apple-felx-direction-设置主轴方向"><a href="#apple-felx-direction-设置主轴方向" class="headerlink" title=":apple:  ==felx-direction==  设置主轴方向"></a>:apple:  ==felx-direction==  设置主轴方向</h6><p>在 flex 布局中 是分为主轴和侧轴两个方向  （x 轴  y 轴）</p>
+<ul>
+<li>默认主轴方向就是 x 轴 ，水平向右</li>
+<li>默认侧轴方向就是 y 轴 ，水平向下</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220602140252462.png" alt="image-20220602140252462"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220602140326902.png" alt="image-20220602140326902"></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 给父级添加 flex 属性 */</span></span><br><span class="line"><span class="attribute">display</span>: flex;</span><br><span class="line"><span class="comment">/* 定义 flex-direction 属性 */</span></span><br><span class="line"><span class="comment">/* 默认的主轴是 x 轴 行 row 那么 y 轴就是侧轴 */</span></span><br><span class="line"><span class="comment">/* 我们的元素是跟着主轴来排列的 */</span></span><br><span class="line"><span class="attribute">flex-direction</span>: row;</span><br></pre></td></tr></table></figure>
+<p>:angel: ==justify-content== ： 设置主轴上的子元素排列方式</p>
+<p>定义了项目在主轴上的对齐方式</p>
+<font style='color: red'>使用这个属性前要确定好主轴是那个</font>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220602141501432.png" alt="image-20220602141501432"></p>
+<h6 id="ant-flex-wrap-：-设置子元素是否换行"><a href="#ant-flex-wrap-：-设置子元素是否换行" class="headerlink" title=":ant:==flex-wrap== ： 设置子元素是否换行"></a>:ant:==flex-wrap== ： 设置子元素是否换行</h6><h6 id=""><a href="#" class="headerlink" title=" "></a> </h6><p>默认是不换行 ，如果装不下 回缩小子元素的宽度，放到父元素中</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220602142908393.png" alt="image-20220602142908393"></p>
+<h6 id="alarm-clock-align-items-：-设置侧轴上的子元素的排列方式（单行）"><a href="#alarm-clock-align-items-：-设置侧轴上的子元素的排列方式（单行）" class="headerlink" title=":alarm_clock: ==align-items== ： 设置侧轴上的子元素的排列方式（单行）"></a>:alarm_clock: ==align-items== ： 设置侧轴上的子元素的排列方式（单行）</h6><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220602143132133.png" alt="image-20220602143132133"></p>
+<h6 id="atom-symbol-align-content-：设置侧轴上的子元素的排列方式（多行）"><a href="#atom-symbol-align-content-：设置侧轴上的子元素的排列方式（多行）" class="headerlink" title=":atom_symbol: ==align-content== ：设置侧轴上的子元素的排列方式（多行）"></a>:atom_symbol: ==align-content== ：设置侧轴上的子元素的排列方式（多行）</h6><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220602143947525.png" alt="image-20220602143947525"></p>
+<font style='color: red'>align-content 和 align-items 区别</font>
+
+<ul>
+<li>align-items 适用于单行情况下，只有上对齐 下对齐 居中和拉伸</li>
+<li>align-content 适用于 换行（多行）的情况下（单行下无效） 上对齐 下对齐 居中和拉伸 平均分配剩余空间等</li>
+<li>单行找 align-items  多行找 align-content</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220602145136675.png" alt="image-20220602145136675"></p>
+<h6 id="avocado-flex-flow-：-复合属性，相对于同时设置-flex-direction-和-flex-wrap"><a href="#avocado-flex-flow-：-复合属性，相对于同时设置-flex-direction-和-flex-wrap" class="headerlink" title=":avocado: ==flex-flow== ： 复合属性，相对于同时设置  flex-direction 和  flex-wrap"></a>:avocado: ==flex-flow== ： 复合属性，相对于同时设置  flex-direction 和  flex-wrap</h6><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">flex-direction</span>: column;</span><br><span class="line"><span class="attribute">flex-wrap</span>: wrap;</span><br><span class="line"><span class="comment">/*简写*/</span></span><br><span class="line"><span class="attribute">flex-flow</span>: column wrap;</span><br></pre></td></tr></table></figure>
+<h5 id="子盒子"><a href="#子盒子" class="headerlink" title="子盒子"></a>子盒子</h5><ul>
+<li>flex 子项目占的份数</li>
+<li>align-self 控制子项目自己在侧轴的排列方式</li>
+<li>order 属性定义项的排列顺序（前后排列）</li>
+</ul>
+<h6 id="flex-子项目占的份数"><a href="#flex-子项目占的份数" class="headerlink" title="flex 子项目占的份数"></a>flex 子项目占的份数</h6><p>定义项目分配剩余空间，用 flex 来表示占多少 <strong>份数</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">flex</span>: <span class="number">5</span>;  <span class="comment">/*默认： 0*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="align-self-控制子项目自己在侧轴的排列方式"><a href="#align-self-控制子项目自己在侧轴的排列方式" class="headerlink" title="align-self 控制子项目自己在侧轴的排列方式"></a>align-self 控制子项目自己在侧轴的排列方式</h6><p>align-self 属性允许单个项目有与其他项目不一样的对齐方式，可覆盖 align-items 属性  默认值为 auto  表示继承父元素的 align-items 属性 如果没有父元素 则等同于 stretch</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> <span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>) &#123;</span><br><span class="line">  	<span class="attribute">align-self</span>: flex-end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="order-属性定义项的排列顺序（前后排列）"><a href="#order-属性定义项的排列顺序（前后排列）" class="headerlink" title="order 属性定义项的排列顺序（前后排列）"></a>order 属性定义项的排列顺序（前后排列）</h6><p>数值越小 排列越靠前</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> <span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>) &#123;</span><br><span class="line">  <span class="comment">/* 默认是0 -1比0小所以在前面 */</span></span><br><span class="line">  	<span class="attribute">order</span>: -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h5><h6 id="携程网"><a href="#携程网" class="headerlink" title="携程网"></a>携程网</h6><p>常见布局</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220603210253347.png" alt="image-20220603210253347"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;local-nav-icon&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span>&gt;</span>景点·玩乐<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">flex-direction</span>: column;</span><br><span class="line">    <span class="comment">/* 侧轴居中对齐（单行） */</span></span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.local-nav-icon</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">32px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">32px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">../images/localnav_bg.png</span>) no-repeat <span class="number">0</span> <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">background-size</span>: <span class="number">32px</span> auto;</span><br><span class="line">    <span class="attribute">margin-top</span>: <span class="number">8px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="rem-布局"><a href="#rem-布局" class="headerlink" title="rem  布局"></a>rem  布局</h3><p>解决问题：</p>
+<ol>
+<li>页面布局文字能否随着屏幕大小变化而变化？</li>
+<li>流式布局 和 flex布局 主要针对宽，高度如何设置？</li>
+<li>怎么让屏幕变化的时候 高度和宽度等比例缩放？</li>
+</ol>
+<h4 id="em"><a href="#em" class="headerlink" title="em"></a>em</h4><p>em 是相对<font style="color: red">父元素</font>字体大小</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="comment">/* em 是相对于父元素的大小来说的 */</span></span><br><span class="line">    <span class="attribute">width</span>: <span class="number">10em</span>;   <span class="comment">/* 10em  =   10*10  =  100px */</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">10em</span>;</span><br><span class="line">    <span class="attribute">background</span>: pink;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220605225652493.png" alt="image-20220605225652493"></p>
+<h4 id="rem"><a href="#rem" class="headerlink" title="rem"></a>rem</h4><p>rem(root em) 是一个相对单位</p>
+<p>rem 是相对于<font style="color: red">html </font>元素的 字体大小</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="comment">/* rem 是相对于 html元素 的大小来说的 */</span></span><br><span class="line">    <span class="attribute">width</span>: <span class="number">10rem</span>;  <span class="comment">/* 10em  =   10*12  =  120px */</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">10rem</span>;</span><br><span class="line">    <span class="attribute">background</span>: pink;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220605230347484.png" alt="image-20220605230347484"></p>
+<font style="color: pink">rem的优点 可以通过修改 html 里面的字体大小来改变页面中元素的大小来整体控制</font>
+
+
+
+
+
+<h3 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h3><h4 id="媒体查询（Media-Query-）是-css3-新语法"><a href="#媒体查询（Media-Query-）是-css3-新语法" class="headerlink" title="媒体查询（Media Query ）是 css3 新语法"></a><strong>媒体查询（Media Query ）是 css3 新语法</strong></h4><ul>
+<li>使用 <font style="color: red">@media</font> 查询 ,可以针对不同的媒体类型定义不同的样式</li>
+<li><font style="color: red">@media 可以针对不同的屏幕尺寸设置不同的样式</font></li>
+<li>当你重置浏览器大小的过程中，页面会根据浏览器的宽度和高度重新渲染页面</li>
+<li>目前针对很多苹果手机，Android手机，平板等设备都用得到多媒体查询</li>
+</ul>
+<h4 id="语法规范"><a href="#语法规范" class="headerlink" title="语法规范"></a><strong>语法规范</strong></h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> mediatype <span class="keyword">and</span>|<span class="keyword">not</span>|<span class="keyword">only</span> (media feature) &#123;</span><br><span class="line">  css-<span class="selector-tag">Code</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>用 @media 开头 注意 @ 符号</li>
+<li>mediatype 媒体类型</li>
+<li>关键字 and not only</li>
+<li>media feature 媒体特性 必须有小括号包含</li>
+</ul>
+<h5 id="mediatype-媒体类型"><a href="#mediatype-媒体类型" class="headerlink" title="mediatype 媒体类型"></a>mediatype 媒体类型</h5><p>将不同终端设备划分成不同类型</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220606100523251.png" alt="image-20220606100523251"></p>
+<h5 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h5><p>关键字将媒体类型或多个媒体特性连接到一起作为媒体查询的条件</p>
+<p>and ： 可以将多个媒体特性连接到一起，“且”</p>
+<p>not ： 排除某个媒体类型， “非”， 可以省略</p>
+<p>only ： 指定某个特定的媒体类型，可以省略</p>
+<h5 id="媒体特性"><a href="#媒体特性" class="headerlink" title="媒体特性"></a>媒体特性</h5><p>每种媒体类型都具体各自不同的特性，根据不同媒体类型的媒体特性设置不同的展示风格</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220606101504440.png" alt="image-20220606101504440"></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*小于等于 480 */</span></span><br><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">480px</span>) &#123;</span><br><span class="line">    <span class="selector-tag">html</span> &#123;</span><br><span class="line">        <span class="attribute">font-size</span>: <span class="number">18px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*小于等于 960 */</span></span><br><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">960px</span>) &#123;</span><br><span class="line">    <span class="selector-tag">html</span> &#123;</span><br><span class="line">        <span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="引入资源"><a href="#引入资源" class="headerlink" title="引入资源"></a>引入资源</h4><p>针对不同的媒体使用不同的样式</p>
+<p>在 link 中判断设备的尺寸，然后引用不同的 css 文件</p>
+<p><strong>语法</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; media=&quot;mediatype and|not|only (media feature)&quot; href=&quot;mystyle<span class="selector-class">.css</span>&quot;&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 根据不同的屏幕宽度 使用不同 css 样式 --&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/rem1<span class="selector-class">.css</span>&quot; media=&quot;screen and (<span class="attribute">min-width</span>: <span class="number">320px</span>)<span class="string">&quot;&gt;</span></span><br><span class="line"><span class="string">&lt;link rel=&quot;</span>stylesheet<span class="string">&quot; href=&quot;</span>/css/rem2.css<span class="string">&quot; media=&quot;</span>screen and (min-width: <span class="number">640px</span>)<span class="string">&quot;&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="Less"><a href="#Less" class="headerlink" title="Less"></a>Less</h1><h2 id="css-弊端"><a href="#css-弊端" class="headerlink" title="css 弊端"></a>css 弊端</h2><p>css 是一门非程序式语言，没有变量，函数，scope（作用域）等概念</p>
+<ul>
+<li>css 需要书写大量看似没有逻辑的代码，css 冗余度是比较高的</li>
+<li>不方便维护及拓展，不利于复用</li>
+<li>css 没有很好的计算能力</li>
+</ul>
+<h2 id="Less-1"><a href="#Less-1" class="headerlink" title="Less"></a>Less</h2><p>less(Leaner Style Sheets) 是一门 css 拓展语言，css 预处理器</p>
+<p>作为 css 的一种形式拓展，他并没有减少 css 的功能，而是在现有的 css 语法上，为 css 加入程序式语言的特性。</p>
+<p>它在 css 的语法基础上，引入了变量，Mixin （混入），运算及函数功能。简化了 css 的编写 </p>
+<p>less 可以让我们用更少的代码做更多的事</p>
+<p>常见 css 预处理器：<strong>Sass</strong>  <strong>Less</strong>  <strong>Stylus</strong></p>
+<font style="color: red">Less 是一门 css 预处理语言，它拓展了 css 的动态特性</font>
+
+
+
+<p>后缀为 <code>less</code> 的文件 </p>
+<h3 id="Less-变量"><a href="#Less-变量" class="headerlink" title="Less 变量"></a>Less 变量</h3><p>变量是指没有固定的值，可以改变的。因为我们 css 中的一些颜色和数值等经常使用</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@变量名: 值;</span><br></pre></td></tr></table></figure>
+<p><strong>变量名规范</strong></p>
+<ul>
+<li>必须有 @ 为前缀</li>
+<li>不能包含特殊字符</li>
+<li>不能以数字开头</li>
+<li>大小写敏感</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@colorPink</span>: pink;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: @colorPink;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: @colorPink;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="less-编译"><a href="#less-编译" class="headerlink" title="less 编译"></a>less 编译</h3><p>可以通过 vscode 插件 </p>
+<p>Easy Less </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220606113034948.png" alt="image-20220606113034948"></p>
+<p>只要保存 less 文件 就会生成 一个同名 css 文件</p>
+<p>or </p>
+<p>通过 lessc 编译</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lessc index.less index.css</span><br></pre></td></tr></table></figure>
+<h3 id="less-嵌套"><a href="#less-嵌套" class="headerlink" title="less 嵌套"></a>less 嵌套</h3><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">  </span><br><span class="line">  <span class="selector-tag">span</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: pink;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>编译生成 css</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> <span class="selector-tag">span</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: pink;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>&amp;</strong></p>
+<p>如果是 交集|伪类|伪元素选择器  需要加 <code>&amp;</code></p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">  <span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: blue;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>css</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span> <span class="selector-pseudo">:hover</span> &#123;  <span class="comment">/* 这里识别为后代选择器 效果就不对 */</span></span><br><span class="line">  <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>正确方式</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">  <span class="selector-tag">&amp;</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: blue;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">&amp;</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>css</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">&quot;&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="less-运算"><a href="#less-运算" class="headerlink" title="less 运算"></a>less 运算</h3><p>任何数字，颜色或变量都可以参与运算。 Less 提供 加（+）减（-）乘（*）除（/）运算符</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@a:</span> <span class="number">12px</span> + <span class="number">2</span>;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">200px</span> - <span class="variable">@a</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">150px</span> + <span class="number">20</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">20</span> + <span class="number">150px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">img</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">82rem</span> / <span class="variable">@a</span>;   <span class="comment">//  ...rem </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>运算符的左右两侧必须有空格</li>
+<li>两个数运算时 如果只有一个数有单位，则以该单位为准   </li>
+<li>两个数运算时 如果两个数都有单位，则以第一个数的单位为准   </li>
+<li>也可以在运算中添加括号</li>
+</ul>
+<h1 id="rem-适配方案"><a href="#rem-适配方案" class="headerlink" title="rem 适配方案"></a>rem 适配方案</h1><h3 id="方案一："><a href="#方案一：" class="headerlink" title="方案一："></a>方案一：</h3><p>less + 媒体查询 + rem</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://qiniu.xiaotao.cloud/image-20220606135745479.png" alt="image-20220606135745479"></p>
+<p>元素大小取值方法</p>
+<p>页面元素的rem值 = 页面元素值（px）/（屏幕宽度 / 划分的份数）</p>
+<p>页面元素的rem值 = 页面元素值（px）/ html 字体大小</p>
+<p>css 页面 引入其他 css</p>
+<p>index.less  引入  common.css</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@import</span> <span class="string">&quot;common&quot;</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="方案二："><a href="#方案二：" class="headerlink" title="方案二："></a>方案二：</h3><p>flexible.js + rem</p>
+<h4 id="flexible-js"><a href="#flexible-js" class="headerlink" title="flexible.js"></a>flexible.js</h4><p>是由淘宝团队出的移动端适配库</p>
+<p>我们不需要在写不同屏幕的媒体查询，因为 js 里面做了处理</p>
+<p>它把屏幕划分成 10 等份</p>
+<p>下载 <code>flexible.js</code></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/amfe/lib-flexible">下载地址</a></p>
+<p><strong>提高指定样式规则的应用优先权（优先级）权重</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!important</span><br></pre></td></tr></table></figure>
+<h1 id="vw-和-vh"><a href="#vw-和-vh" class="headerlink" title="vw 和 vh"></a>vw 和 vh</h1><p>vw/vh 是一个相对单位（类似于em 和 rem 相对单位）</p>
+<ul>
+<li>vw ： viewport width 视口宽度单位</li>
+<li>vh ： viewport height 视口高度单位</li>
+</ul>
+<p>相对视口尺寸计算结果</p>
+<ul>
+<li>1vw = 1/100 视口宽度</li>
+<li>1vh = 1/100 视口高度</li>
+</ul>
+<p>如当前屏幕视口是 375 像素，则 1vw 就是 3.75 像素</p>
+<p>注：</p>
+<p>==和百分比有区别 百分比是相对于父元素来说的 而vw和vh总是针对当前视口来说的==</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Xiao Tao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/posts/a89303d5.html">http://example.com/posts/a89303d5.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">StudyBlog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://api.maho.cc/random-img/pc.php?4" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="/pluginsSrc/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="/pluginsSrc/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/4b57d1c9.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://api.maho.cc/random-img/pc.php?10" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">LayUI</div></div></a></div><div class="next-post pull-right"><a href="/posts/da9d510d.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://api.maho.cc/random-img/pc.php?7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">html5 css3</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Twikoo</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cravatar.cn/avatar/e2e440da3c8f5379912c8a9c4df4e420?s=96&amp;d=https%3A%2F%2Fcn.gravatar.com%2Favatar%2Fb745710ae6b0ce9dfb13f5b7c0956be1&amp;r=g" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Xiao Tao</div><div class="author-info__description">一以贯之的努力，不得懈怠的人生</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xiaotao2177393158" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E7%AB%AF"><span class="toc-number">1.</span> <span class="toc-text">移动端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%B1%8F%E5%B9%95%E5%B0%BA%E5%AF%B8"><span class="toc-number">1.0.1.</span> <span class="toc-text">常见移动端屏幕尺寸</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%83%E5%BC%8F"><span class="toc-number">1.0.2.</span> <span class="toc-text">调式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E5%8F%A3"><span class="toc-number">1.1.</span> <span class="toc-text">视口</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#meta-%E8%A7%86%E5%8F%A3%E6%A0%87%E7%AD%BE"><span class="toc-number">1.1.1.</span> <span class="toc-text">meta 视口标签</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E7%AB%AF-%E9%80%82%E9%85%8D-%E6%96%B9%E6%A1%88"><span class="toc-number">1.2.</span> <span class="toc-text">移动端 适配 方案</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#rem-%E9%80%82%E9%85%8D"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">rem 适配</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%B8%83%E5%B1%80"><span class="toc-number">1.3.</span> <span class="toc-text">移动端布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E7%8B%AC%E5%88%B6%E4%BD%9C-%E7%A7%BB%E5%8A%A8%E7%AB%AF-%E9%A1%B5%E9%9D%A2"><span class="toc-number">1.3.1.</span> <span class="toc-text">单独制作 移动端 页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%8D%E5%BA%94%E5%BC%8F%E9%A1%B5%E9%9D%A2%E5%B8%83%E5%B1%80"><span class="toc-number">1.3.2.</span> <span class="toc-text">响应式页面布局</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">流式布局</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#flex-%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">flex  弹性布局</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%88%B6%E7%9B%92%E5%AD%90"><span class="toc-number">1.3.2.2.1.</span> <span class="toc-text">父盒子</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#apple-felx-direction-%E8%AE%BE%E7%BD%AE%E4%B8%BB%E8%BD%B4%E6%96%B9%E5%90%91"><span class="toc-number">1.3.2.2.1.1.</span> <span class="toc-text">:apple:  &#x3D;&#x3D;felx-direction&#x3D;&#x3D;  设置主轴方向</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#ant-flex-wrap-%EF%BC%9A-%E8%AE%BE%E7%BD%AE%E5%AD%90%E5%85%83%E7%B4%A0%E6%98%AF%E5%90%A6%E6%8D%A2%E8%A1%8C"><span class="toc-number">1.3.2.2.1.2.</span> <span class="toc-text">:ant:&#x3D;&#x3D;flex-wrap&#x3D;&#x3D; ： 设置子元素是否换行</span></a></li><li class="toc-item toc-level-6"><a class="toc-link"><span class="toc-number">1.3.2.2.1.3.</span> <span class="toc-text"> </span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#alarm-clock-align-items-%EF%BC%9A-%E8%AE%BE%E7%BD%AE%E4%BE%A7%E8%BD%B4%E4%B8%8A%E7%9A%84%E5%AD%90%E5%85%83%E7%B4%A0%E7%9A%84%E6%8E%92%E5%88%97%E6%96%B9%E5%BC%8F%EF%BC%88%E5%8D%95%E8%A1%8C%EF%BC%89"><span class="toc-number">1.3.2.2.1.4.</span> <span class="toc-text">:alarm_clock: &#x3D;&#x3D;align-items&#x3D;&#x3D; ： 设置侧轴上的子元素的排列方式（单行）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#atom-symbol-align-content-%EF%BC%9A%E8%AE%BE%E7%BD%AE%E4%BE%A7%E8%BD%B4%E4%B8%8A%E7%9A%84%E5%AD%90%E5%85%83%E7%B4%A0%E7%9A%84%E6%8E%92%E5%88%97%E6%96%B9%E5%BC%8F%EF%BC%88%E5%A4%9A%E8%A1%8C%EF%BC%89"><span class="toc-number">1.3.2.2.1.5.</span> <span class="toc-text">:atom_symbol: &#x3D;&#x3D;align-content&#x3D;&#x3D; ：设置侧轴上的子元素的排列方式（多行）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#avocado-flex-flow-%EF%BC%9A-%E5%A4%8D%E5%90%88%E5%B1%9E%E6%80%A7%EF%BC%8C%E7%9B%B8%E5%AF%B9%E4%BA%8E%E5%90%8C%E6%97%B6%E8%AE%BE%E7%BD%AE-flex-direction-%E5%92%8C-flex-wrap"><span class="toc-number">1.3.2.2.1.6.</span> <span class="toc-text">:avocado: &#x3D;&#x3D;flex-flow&#x3D;&#x3D; ： 复合属性，相对于同时设置  flex-direction 和  flex-wrap</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AD%90%E7%9B%92%E5%AD%90"><span class="toc-number">1.3.2.2.2.</span> <span class="toc-text">子盒子</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#flex-%E5%AD%90%E9%A1%B9%E7%9B%AE%E5%8D%A0%E7%9A%84%E4%BB%BD%E6%95%B0"><span class="toc-number">1.3.2.2.2.1.</span> <span class="toc-text">flex 子项目占的份数</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#align-self-%E6%8E%A7%E5%88%B6%E5%AD%90%E9%A1%B9%E7%9B%AE%E8%87%AA%E5%B7%B1%E5%9C%A8%E4%BE%A7%E8%BD%B4%E7%9A%84%E6%8E%92%E5%88%97%E6%96%B9%E5%BC%8F"><span class="toc-number">1.3.2.2.2.2.</span> <span class="toc-text">align-self 控制子项目自己在侧轴的排列方式</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#order-%E5%B1%9E%E6%80%A7%E5%AE%9A%E4%B9%89%E9%A1%B9%E7%9A%84%E6%8E%92%E5%88%97%E9%A1%BA%E5%BA%8F%EF%BC%88%E5%89%8D%E5%90%8E%E6%8E%92%E5%88%97%EF%BC%89"><span class="toc-number">1.3.2.2.2.3.</span> <span class="toc-text">order 属性定义项的排列顺序（前后排列）</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B"><span class="toc-number">1.3.2.2.3.</span> <span class="toc-text">案例</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%90%BA%E7%A8%8B%E7%BD%91"><span class="toc-number">1.3.2.2.3.1.</span> <span class="toc-text">携程网</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rem-%E5%B8%83%E5%B1%80"><span class="toc-number">1.3.3.</span> <span class="toc-text">rem  布局</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#em"><span class="toc-number">1.3.3.1.</span> <span class="toc-text">em</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rem"><span class="toc-number">1.3.3.2.</span> <span class="toc-text">rem</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.3.4.</span> <span class="toc-text">媒体查询</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2%EF%BC%88Media-Query-%EF%BC%89%E6%98%AF-css3-%E6%96%B0%E8%AF%AD%E6%B3%95"><span class="toc-number">1.3.4.1.</span> <span class="toc-text">媒体查询（Media Query ）是 css3 新语法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83"><span class="toc-number">1.3.4.2.</span> <span class="toc-text">语法规范</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#mediatype-%E5%AA%92%E4%BD%93%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.3.4.2.1.</span> <span class="toc-text">mediatype 媒体类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.3.4.2.2.</span> <span class="toc-text">关键字</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AA%92%E4%BD%93%E7%89%B9%E6%80%A7"><span class="toc-number">1.3.4.2.3.</span> <span class="toc-text">媒体特性</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%95%E5%85%A5%E8%B5%84%E6%BA%90"><span class="toc-number">1.3.4.3.</span> <span class="toc-text">引入资源</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less"><span class="toc-number">2.</span> <span class="toc-text">Less</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#css-%E5%BC%8A%E7%AB%AF"><span class="toc-number">2.1.</span> <span class="toc-text">css 弊端</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Less-1"><span class="toc-number">2.2.</span> <span class="toc-text">Less</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Less-%E5%8F%98%E9%87%8F"><span class="toc-number">2.2.1.</span> <span class="toc-text">Less 变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#less-%E7%BC%96%E8%AF%91"><span class="toc-number">2.2.2.</span> <span class="toc-text">less 编译</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#less-%E5%B5%8C%E5%A5%97"><span class="toc-number">2.2.3.</span> <span class="toc-text">less 嵌套</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#less-%E8%BF%90%E7%AE%97"><span class="toc-number">2.2.4.</span> <span class="toc-text">less 运算</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#rem-%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88"><span class="toc-number">3.</span> <span class="toc-text">rem 适配方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%80%EF%BC%9A"><span class="toc-number">3.0.1.</span> <span class="toc-text">方案一：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%BA%8C%EF%BC%9A"><span class="toc-number">3.0.2.</span> <span class="toc-text">方案二：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#flexible-js"><span class="toc-number">3.0.2.1.</span> <span class="toc-text">flexible.js</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#vw-%E5%92%8C-vh"><span class="toc-number">4.</span> <span class="toc-text">vw 和 vh</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/ba23b44c.html" title="阿里云短信接码"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://api.maho.cc/random-img/pc.php?15" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="阿里云短信接码"/></a><div class="content"><a class="title" href="/posts/ba23b44c.html" title="阿里云短信接码">阿里云短信接码</a><time datetime="2023-02-23T03:24:55.625Z" title="发表于 2023-02-23 11:24:55">2023-02-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/d044eab7.html" title="TypeScript"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://api.maho.cc/random-img/pc.php?12" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="TypeScript"/></a><div class="content"><a class="title" href="/posts/d044eab7.html" title="TypeScript">TypeScript</a><time datetime="2023-02-23T03:24:55.625Z" title="发表于 2023-02-23 11:24:55">2023-02-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/cc1b9611.html" title="JavaScript"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://api.maho.cc/random-img/pc.php?9" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaScript"/></a><div class="content"><a class="title" href="/posts/cc1b9611.html" title="JavaScript">JavaScript</a><time datetime="2023-02-23T03:24:55.624Z" title="发表于 2023-02-23 11:24:55">2023-02-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f3b98ae9.html" title="前端"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://api.maho.cc/random-img/pc.php?2" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前端"/></a><div class="content"><a class="title" href="/posts/f3b98ae9.html" title="前端">前端</a><time datetime="2023-02-23T03:24:55.623Z" title="发表于 2023-02-23 11:24:55">2023-02-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/60d97b56.html" title="8大排序算法"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://api.maho.cc/random-img/pc.php?16" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="8大排序算法"/></a><div class="content"><a class="title" href="/posts/60d97b56.html" title="8大排序算法">8大排序算法</a><time datetime="2023-02-23T03:24:55.623Z" title="发表于 2023-02-23 11:24:55">2023-02-23</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Xiao Tao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Copyright © by xiaotao All Rights Reserved. <a target="_blank" rel="noopener" href="https://beian.miit.gov.cn"><img class="icp-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="icp图片"><span>备案号：滇ICP备2021007136号-1</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/pluginsSrc/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/pluginsSrc/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '',
+      appKey: '',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('/pluginsSrc/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: '',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: '',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('/pluginsSrc/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Valine' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><div class="aplayer no-destroy" data-id="7610399911" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-lrcType="-1"> </div><script src="/pluginsSrc/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="/pluginsSrc/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><link rel="stylesheet" href="/pluginsSrc/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="/pluginsSrc/aplayer/dist/APlayer.min.js"></script><script src="/pluginsSrc/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="/pluginsSrc/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.5/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var qweather_key = '1b7ad4c552264b689ab62ff5a16d3ebb';
+  var gaud_map_key = '782c289c7b4409794e9ae6ee69601478';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.5/lib/clock.min.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('article-sort-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__slideInRight');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js"></script><script async src="/js/ali_font.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
